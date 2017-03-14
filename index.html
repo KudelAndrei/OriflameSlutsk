@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Slutsk Oriflame</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body class="main-body">
+
+	<div class="container-fluid clearfix">
+		<div class="row">
+			<!-- левая секция -->
+			<div class="panel-left">
+				
+				<!-- логотип -->
+				<a href="#" class="logo"><img src="img/logo.svg" alt="Slutsk Oriflame"></a>
+				
+				<!-- меню -->
+				<nav>
+					<!-- мобильное меню -->
+					<a href="#" class="toggle-menu hidden-lg hidden-md">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<ul class="menu">
+						<li><a href="#header" class="menu__item menu__item--active">Главная</a></li>
+						<li><a href="#about" class="menu__item">О Нас</a></li>
+						<li><a href="#new" class="menu__item">Новости MIX</a></li>
+						<li><a href="#reviews" class="menu__item">Отзывы</a></li>
+						<li><a href="#registration" class="menu__item">Регистрация</a></li>
+						<li><a href="#write" class="menu__item">Написать нам</a></li>
+						<li><a href="#contact" class="menu__item">Контакты</a></li>
+					</ul>
+
+					<script>
+						function menuRes(){
+							var menu = document.querySelector(".menu");
+							if (window.innerWidth <= '993'){
+								menu.classList.add("menu-mobile");
+							} 
+							else { 
+								menu.classList.remove("menu-mobile"); 
+							}
+						};
+						menuRes();
+						window.addEventListener("resize", menuRes, true);
+					</script>
+				</nav>
+
+				<!-- социальные сети -->
+				<ul class="soc-seti">
+					<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+				</ul>
+
+			</div>
+
+			<!-- правая секция -->
+			<div class="panel-right">
+
+				<!-- ШАПКА -->
+				<section id="header" class="main-header">
+				
+						<!-- слайдер -->
+						<div class="sl-header">
+
+							<div class="sl-header__item" style="background-image: url(img/header/4.jpg)">
+								<div class="row">
+									<div class="col-sm-5 col-sm-offset-6 col-md-offset-7 col-xs-10 col-xs-offset-1">
+										<div class="sl-header__content">
+											<span class="sl-header__categoria">The ONE</span>
+											<h2 class="sl-header__head">Твой поцелуй</h2>
+											<p class="sl-header__desc"> Насыщенные стойкие оттенки и смягчающая формула с натуральным воском, который помогает удерживать влагу в коже губ.</p>
+											<a href="#" class="sl-header__link">Узнать больше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sl-header__item" style="background-image: url(img/header/1.jpg)">
+								<div class="row">
+									<div class="col-sm-5 col-sm-offset-6 col-md-offset-7 col-xs-10 col-xs-offset-1">
+										<div class="sl-header__content">
+											<span class="sl-header__categoria">Красота как образ жизни</span>
+											<h2 class="sl-header__head">Что такое красота для тебя?</h2>
+											<p class="sl-header__desc"> Актриса Екатерина Гусева и топ-блогеры отвечают на главный вопрос о красоте.</p>
+											<a href="#" class="sl-header__link">Узнать больше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sl-header__item" style="background-image: url(img/header/2.jpg)">
+								<div class="row">
+									<div class="col-sm-5 col-sm-offset-6 col-md-offset-7 col-xs-10 col-xs-offset-1">
+										<div class="sl-header__content">
+											<span class="sl-header__categoria">Тренды</span>
+											<h2 class="sl-header__head">8 марта: идеи подарков</h2>
+											<p class="sl-header__desc"> Топ-блогеры рассказывают о понравившихся продуктах Oriflame, которые они подарили бы подругам и родным в день 8 марта.</p>
+											<a href="#" class="sl-header__link">Узнать больше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sl-header__item" style="background-image: url(img/header/3.jpg)">
+								<div class="row">
+									<div class="col-sm-5 col-sm-offset-6 col-md-offset-7 col-xs-10 col-xs-offset-1">
+										<div class="sl-header__content">
+											<span class="sl-header__categoria">NovAge</span>
+											<h2 class="sl-header__head">Обновление для зрелой кожи</h2>
+											<p class="sl-header__desc"> Зрелая кожа нуждается в восстановлении и активном увлажнении. Серия NovAge Time Restore специально разработана для потребностей кожи в возрасте 50+.</p>
+											<a href="#" class="sl-header__link">Узнать больше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+								
+						</div>
+
+					</section>
+
+					<!-- секция О НАС -->
+					<section id="about"  class="about section">
+						
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<h2 class="section__head"><span>О нас</span></h2>
+								<p class="section__desc">Небольшая информация о нас</p>
+							</div>
+						</div>
+
+							<!-- слайдер О НАС -->
+							<div class="sl-about">
+								
+								<!-- слайд -->
+								<div class="sl-about__item clearfix">
+									<a href="img/about/1.jpg" class="sl-about__img image-popup-vertical-fit" title="Ольга Семенова Сергеевна"><img src="img/about/1.jpg" alt="Ольга Викторовна"></a>
+									<div class="sl-about__content">
+										<h2 class="sl-about__name">Ольга Семенова</h2>
+										<h4 class="sl-about__post">Консультант</h4>
+										<p class="sl-about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Себя приставка реторический своих снова если заголовок текстов большого своих!</p>
+										<p class="sl-about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+										<a href="#write" class="sl-about__link">Связаться со мной</a>
+									</div>
+								</div>
+
+								<!-- слайд -->
+								<div class="sl-about__item sl-about__item--right clearfix">
+									<div class="sl-about__content">
+										<h2 class="sl-about__name">Оксана Иванова</h2>
+										<h4 class="sl-about__post">Стажер</h4>
+										<p class="sl-about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Себя приставка реторический своих снова если заголовок текстов большого своих!</p>
+										<p class="sl-about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+										<a href="#write" class="sl-about__link">Связаться со мной</a>
+									</div>
+									<a href="img/about/2.jpg" class="sl-about__img image-popup-vertical-fit" title="Ольга Семенова Сергеевна"><img src="img/about/2.jpg" alt="Ольга Викторовна"></a>
+								</div>
+
+							</div>
+
+					</section>
+
+					<!-- секция НОВОСТИ -->
+					<section id="new"  class="new section">
+						
+
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<h2 class="section__head"><span>Новости</span></h2>
+								<p class="section__desc">Наши новости, акции, блог, каталог и многое другое</p>
+							</div>
+							<div class="col-lg-12">
+
+								<!-- фильтры для плиток -->
+								<ul class="mixblock-filters">
+									<li class="filter mixblock-filters__filter active" data-filter="all" data-hover="Все">Все</li>
+									<li class="filter mixblock-filters__filter" data-filter=".category-1" data-hover="Новости">Новости</li>
+									<li class="filter mixblock-filters__filter" data-filter=".category-2" data-hover="Акции">Акции</li>
+									<li class="filter mixblock-filters__filter" data-filter=".category-3" data-hover="Блог">Блог</li>
+									<li class="filter mixblock-filters__filter" data-filter=".category-4" data-hover="Каталог">Каталог</li>
+								</ul>
+
+								<!-- плитки  из......................................................................-->
+								<div class="mixblock">
+									<a href="https://by.oriflame.com/press/press-releases/16-10-the-one-lip-sensation-vinyl" class="mix mixblock__item category-1" target="_blank"> 
+										<h4>Парфюмерная вода My Destiny от Oriflame отмечена премией FiFi Russian Fragrance Awards 2016</h4>
+										<img src="img/news/1.jpg" alt="iame">
+										<p>Подробнее...</p>
+										<time>20.12.2016</time>
+									</a> 
+
+									<a href="https://by.oriflame.com/press/press-releases/16-10-the-one-lip-sensation-vinyl" class="mix mixblock__item category-1" target="_blank"> 
+										<h4>Парфюмерная вода My Destiny от Oriflame отмечена премией</h4>
+										<img src="img/news/2.jpg" alt="iame">
+										<p>Подробнее...</p>
+										<time>22.12.2016</time>
+									</a> 
+
+									<a href="https://by.oriflame.com/press/press-releases/16-10-the-one-lip-sensation-vinyl" class="mix mixblock__item category-4" target="_blank"> 
+										<h4>Новая линейка The ONE Featherlight от Oriflame</h4>
+										<img src="img/news/3.jpg" alt="iame">
+										<p>Подробнее...</p>
+										<time>20.12.2016</time>
+									</a> 
+
+									<a href="https://by.oriflame.com/press/press-releases/16-10-the-one-lip-sensation-vinyl" class="mix mixblock__item category-2" target="_blank"> 
+										<h4>Oriflame представляет жидкую лаковую губную помаду The ONE Lip Sensation</h4>
+										<img src="img/news/4.jpg" alt="iame">
+										<p>Подробнее...</p>
+										<time>22.11.2016</time>
+									</a> 
+
+									<a href="https://by.oriflame.com/press/press-releases/16-10-the-one-lip-sensation-vinyl" class="mix mixblock__item category-2" target="_blank"> 
+										<h4>Oriflame представляет жидкую лаковую губную помаду The ONE Lip Sensation</h4>
+										<img src="img/news/5.jpg" alt="iame">
+										<p>Подробнее...</p>
+										<time>22.11.2016</time>
+									</a> 
+
+									<a href="https://by.oriflame.com/press/press-releases/16-10-the-one-lip-sensation-vinyl" class="mix mixblock__item category-3" target="_blank"> 
+										<h4>Парфюмерная вода My Destiny от Oriflame отмечена премией FiFi Russian Fragrance Awards 2016</h4>
+										<img src="img/news/6.jpg" alt="iame">
+										<p>Подробнее...</p>
+										<time>22.11.2016</time>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</section>
+
+					
+					<!-- секция ОТЗЫВЫ -->
+					<section id="reviews"  class="reviews">
+						
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<h2 class="section__head"><span>Отзывы клиентов</span></h2>
+								<p class="section__desc">Отзывы наших клиентов</p>
+							</div>
+							<div class="col-lg-12">
+								<!-- слайдер -->
+								<div class="sl-reviews">
+									
+									<!-- слайд -->
+									<div class=" sl-reviews__slide">
+										<a href="img/reviews/1.jpg" class="sl-reviews__img image-popup-vertical-fit" title="FIO"><img src="img/reviews/1.jpg" alt="FIO"></a>
+										<h3 class="sl-reviews__head">Паулик Минец Витальевич</h3>
+										<strong class="sl-reviews__post">Покупатель</strong>
+										<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пояс возвращайся жизни обеспечивает лучше пустился, пунктуация раз над повстречался подпоясал грустный напоивший взобравшись коварный. Приставка семантика над правилами за раз заманивший свою это океана пояс вскоре маленький рукопись пунктуация ведущими знаках, алфавит обеспечивает текст lorem жизни страну снова! Бросил!</p>
+										<ul class="soc">
+											<li><a href="#" class="soc__item"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="soc__item"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="soc__item"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+
+									<!-- слайд -->
+									<div class=" sl-reviews__slide">
+										<div class="sl-reviews__img">
+											<a href="img/reviews/2.jpg" class="image-popup-vertical-fit" title="FIO"><img src="img/reviews/2.jpg" alt="FIO"></a>
+										</div>
+										<h3 class="sl-reviews__head">Илона Бируля Витальевна</h3>
+										<strong class="sl-reviews__post">Покупатель</strong>
+										<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пояс возвращайся жизни обеспечивает лучше пустился, пунктуация раз над повстречался подпоясал грустный напоивший взобравшись коварный. Приставка семантика над правилами за раз заманивший свою это океана пояс вскоре маленький рукопись пунктуация ведущими знаках, алфавит обеспечивает текст lorem жизни страну снова! Бросил!</p>
+										<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+										<ul class="soc">
+											<li><a href="#" class="soc__item"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="soc__item"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#" class="soc__item"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- секция РЕГИСТРАЦИЯ -->
+					<section  id="registration" class="registration">
+						
+						<div class="row">
+							<div class="col-lg-10 col-lg-offset-1">
+								<h2 class="section__head"><span>преимущества Регистрация</span></h2>
+								<p class="section__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Которое заглавных путь собрал дал?</p>
+							</div>
+							<div class="col-lg-12">
+								<div class="registration__content">
+									<div class="row">
+										<div class="col-md-12">
+											<ul class="registration-advan clearfix">
+												<li class="registration-advan__item">
+													<img src="img/registration/1.svg" alt="advantages">
+													<strong>Скидки <span>20%</span></strong>
+													<p>на всю продукцию компании; личная страничка на сайте для быстрых и удобных покупок</p>
+												</li>
+												<li class="registration-advan__item">
+													<img src="img/registration/2.svg" alt="advantages">
+													<strong>Подарки</strong>
+													<p>в каждом каталоге при регистрации; полуите наборы косметики со скидкой <span>95%</span></p>
+												</li>
+												<li class="registration-advan__item">
+													<img src="img/registration/3.svg" alt="advantages">
+													<strong>Бонусы</strong>
+													<p>дополнительная скидка до <span>90%</span>; дополнительная скидка на заказ</p>
+												</li>
+												<li class="registration-advan__item">
+													<img src="img/registration/4.svg" alt="advantages">
+													<strong>Акции</strong>
+													<p>участвуй в акциях компании каждый каталог и получай гаранированные подарки</p>
+												</li>
+												<li class="registration-advan__item">
+													<img src="img/registration/5.svg" alt="advantages">
+													<strong>Доход</strong>
+													<p>узнай о возможности дополнительного дохода; получи свой автомобиль; путешествуй за счет компании за границу</p>
+												</li>
+												<li class="registration-advan__item">
+													<img src="img/registration/6.svg" alt="advantages">
+													<strong>Мастер-класс</strong>
+													<p>первый Мастер-класс по уходу за лицом <span>бесплатно!</span>; тестирование продукции</p>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12">
+											<div class="btn-wrap">
+												<a href="#registration-form" class="btn popup-with-form">Присоедениться</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- секция НАПИСАТЬ НАМ -->
+					<section id="write"  class="write">
+						
+						<!--  <div class="bgi" style="background-image: url(img/write.jpg);"></div>-->
+
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<h2 class="section__head"><span>Написать нам</span></h2>
+								<p class="section__desc">Для вашего удобства, вы можете воспользоваться любым из доступных каналов связи: обратиться к нам по телефону, по электронной почте или через форму на сайте. Мы всегда рады вам помочь!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-lg-offset-1">
+								<h3 class="write-head">Далеко-далеко за словесными горами в стране.</h3>
+								<ul class="write-qustion">
+									<li class="write-qustion__item"><i class="fa fa-check" aria-hidden="true"></i>Далеко-далеко за словесными горами в стране.</li>
+									<li class="write-qustion__item"><i class="fa fa-check" aria-hidden="true"></i>Далеко-далеко пвап в стране, гласных.</li>
+									<li class="write-qustion__item"><i class="fa fa-check" aria-hidden="true"></i>вап-двапвап  вапвесными горами в стране, гласных.</li>
+									<li class="write-qustion__item"><i class="fa fa-check" aria-hidden="true"></i>в-далеко за апап горами в стране, гласных.</li>
+									<li class="write-qustion__item"><i class="fa fa-check" aria-hidden="true"></i>Далеко-вапва вап ап горами в стране, гласных.</li>
+									<li class="write-qustion__item"><i class="fa fa-check" aria-hidden="true"></i>Далеко-далеко горами в стране, гласных.</li>
+								</ul>
+							</div>
+							<div class="col-lg-5 col-md-6">
+								<form action="" class="write-form">
+									<label for="fio">
+										<input type="text" name="fio" placeholder="Введите ваше имя..." required="">
+									</label>
+									<label for="mail">
+										<input type="text" name="mail" type="email" placeholder="Введите ваше mail..." required="">
+									</label>
+									<label for="message">
+										<textarea placeholder="Введите сообщение..." name="message" required=""></textarea>
+									</label>
+									<button class="btn">Отправить</button>
+								</form>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- секция КОНТАКТЫ -->
+					<section id="contact"  class="contact">
+						
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<h2 class="section__head"><span>Контакты</span></h2>
+								<p class="section__desc">Миссия Контактного центра Орифлэйм – отвечать на любые вопросы наших клиентов и Консультантов.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12" id="maps">
+							</div>
+						</div>
+						<div class="row">
+							<div class="contact-bottom clearfix">
+								<div class="col-md-3 col-sm-6 col-lg-offset-1">
+									<div class="wrap-logo">
+										<!-- логотип -->
+										<a href="#" class="logo"><img src="img/logo-footer.svg" alt="Slutsk Oriflame"></a>
+										<p class="logo__desc">Орифлэйм - ведущая косметическая компания на рынке прямых продаж.</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-md-offset-1">
+								<!-- ТЕЛЕФОНЫ -->
+									<div class="wrapper">
+
+										 <div class="tabs">
+											  <span class="tab">МТС</span>
+											  <span class="tab">Velcome</span>     
+											  <span class="tab">Life</span>     
+										 </div>
+
+										<div class="tab_content">
+											<div class="tab_item">
+												<a href="tel:80290001122"><span>Ольга</span> 8(029) 999-88-22 </a>
+												<a href="tel:80290001122"><span>Оксана</span> 8(029) 999-88-33 </a>
+											</div>
+											<div class="tab_item">
+												<a href="tel:80290001122"><span>Ольга</span> 8(029) 999-88-34 </a>
+												<a href="tel:80290001122"><span>Оксана</span> 8(029) 999-88-13 </a>
+											</div>
+											<div class="tab_item">
+												<a href="tel:80290001122"><span>Ольга</span> 8(029) 999-88-21 </a>
+												<a href="tel:80290001122"><span>Оксана</span> 8(029) 999-88-56 </a>
+											</div>
+										 </div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-12">
+									<!-- социальные сети -->
+									<div class="contact-soc">
+										<h3 class="contact-soc__head">Мы в социальных сетях:</h3>
+										<ul class="soc-seti">
+											<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+											<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li class="soc-seti__item"><a href="#" class="soc__link" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+							<p class="copyright">© Copyright 2016</p></div>
+						</div>
+
+					</section>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="registration-form" class="mfp-hide mfp-hide white-popup-block">
+	 <iframe src="https://by.oriflame.com/business-opportunity/become-c.." scrolling="no" frameborder="0" width="450" height="1400"></iframe>
+	</div>
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+	<script type="text/javascript"charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0jAGDpS_mwsBO7ikv0QFx8l4Ldi9HLr3&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false&amp;id=maps"></script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>
